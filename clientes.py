@@ -25,4 +25,4 @@ def remover_cliente(id_cliente):
         if cliente["id"] == id_cliente:
             lista_cliente.remove(cliente)
             print(f"Sucesso: Cliente com Id {id_cliente} foi removido.")
-        print(f"Erro: Não é possivel remover o cliente com o Id{id_cliente} Não existe.")                          
+        print(f"Erro: Não é possivel remover o cliente com o Id{id_cliente} Não existe.")                    
