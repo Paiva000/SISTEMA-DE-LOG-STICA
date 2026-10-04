@@ -1,4 +1,4 @@
-from usuario import cadastrar_usuario, listar_usuarios, buscar_usuario_por_id1
+from usuario import cadastrar_usuario, listar_usuarios, buscar_usuario_por_id
 
 
 def menu():
