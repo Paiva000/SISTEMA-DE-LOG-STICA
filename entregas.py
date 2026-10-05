@@ -86,6 +86,7 @@ def cancelar_entrega(id_entrega):
     entrega = buscar_entrega(id_entrega)
     if entrega is None:
         print("Erro: Entrega com Id ",id_entrega, " não foi encontrada.")
+        return
 
 #Se a entrega já foi Entregue ou Cancelada não há como cancelar
     if entrega["status"] in ["Entregue", "Cancelada"]:
