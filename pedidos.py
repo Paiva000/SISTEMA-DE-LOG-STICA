@@ -40,7 +40,7 @@ def criar_pedido(clientes, produtos):
         print("A quantidade deve ser maior que zero.")
         return
 
-    if produto_encontrado["estoque"] < quantidade:
+    if produto_encontrado["quantidade"] < quantidade:
         print("Estoque insuficiente.")
         return
 
@@ -60,7 +60,7 @@ def criar_pedido(clientes, produtos):
     pedidos.append(pedido)
 
     # Diminui o estoque
-    produto_encontrado["estoque"] -= quantidade
+    produto_encontrado["quantidade"] -= quantidade
 
     print("\nPedido realizado com sucesso!")
     print(f"Número do pedido: {numero_pedido}")

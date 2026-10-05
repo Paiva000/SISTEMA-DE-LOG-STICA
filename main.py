@@ -61,6 +61,8 @@ def menu():
                 print(f"ID: {usuario['id']}")
                 print(f"Nome: {usuario['nome']}")
                 print(f"Email: {usuario['email']}")
+            else:
+                print("Erro: Usuário não encontrado.")    
 
         # CLIENTES
         elif opcao == "4":
@@ -171,6 +173,8 @@ def menu():
                     print(f"Quantidade: {entrega['quantidade']}")
                     print(f"Endereço: {entrega['endereco']}")
                     print(f"Status: {entrega['status']}")
+                else:
+                    print("Erro: Entrega não encontrada.")    
             except ValueError:
                 print("Erro: Digite um número de ID válido.")
 
