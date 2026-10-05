@@ -1,9 +1,9 @@
-# Lista para armazenar os produtos
 produtos = []
 
 def cadastrar_produto(nome: str, quantidade: int, preco: float):
+    # Validação simples: se quantidade ou preço forem negativos, recusa o cadastro
     if quantidade < 0 or preco < 0:
-        raise ValueError("Quantidade e preço devem ser não negativos")
+        return None  # Retorna None para indicar que o cadastro não foi realizado
     
     produto = {
         "id": len(produtos) + 1,
